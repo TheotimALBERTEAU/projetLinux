@@ -32,10 +32,3 @@ sudo cp uptime-kuma.service /etc/systemd/system/uptime-kuma.service
 
 sudo systemctl daemon-reload
 sudo systemctl start uptime-kuma && sudo systemctl enable uptime-kuma
-
-# Sécurité 
-sudo apt install fail2ban ufw
-
-sudo ufw enable
-
-sudo ufw allow 3001
