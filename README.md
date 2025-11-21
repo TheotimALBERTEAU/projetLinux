@@ -50,11 +50,17 @@ Voila les fichiers qui ont été bien ajoutés au dropbox
 Pour la sécurité nous avons utilisé [fail2ban](https://github.com/fail2ban/fail2ban) qui permet de bloquer les attaques brutforce sur le port 22.
 Nous utilisons aussi [ufw](https://fr.wikipedia.org/wiki/Uncomplicated_Firewall) pour n'autoriser que le trafic sur le port `3001` en TCP qui est le port HTTP exposé par le service Uptime Kuma.
 
-Tout ceci est référencé dans le fichier [security.sh](security.sh)
+> Tout ceci est référencé dans le fichier [security.sh](security.sh)
 
 Nous avons fait une config fail2ban pour customiser le ban sur le bruteforce ssh. Cette config se trouve dans le fichier [jail.conf](jail.conf)
 
 ## Monitoring
 
 Étant donné que nous avons self hosté un service de monitoring, cela parait un peu bizarre de monitorer un service de monitoring.
-Nous allons donc créer un petit nginx qui tourne en fond pour pouvoir ajouter une target sur uptime kuma et monitorer le serveur nginx.
+Nous avons donc créé un petit nginx qui tourne en fond pour pouvoir ajouter une target sur uptime kuma et monitorer le serveur nginx.
+
+Sur ce nginx nous avons setup un jeu de 2048 en vanilla html/css/js pour tester :
+<img width="1912" height="921" alt="image" src="https://github.com/user-attachments/assets/7ea9a5bb-b1ef-43ce-814e-7d3335773ccd" />
+
+Sur Uptime Kuma nous avons créé le monitor et une page de status qui ressemble à ça :
+<img width="1914" height="915" alt="image" src="https://github.com/user-attachments/assets/722b87b5-a1b3-4f0a-87d7-559345c23950" />
