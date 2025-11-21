@@ -51,4 +51,5 @@ Nous avons fait une config fail2ban pour customiser le ban sur le bruteforce ssh
 
 ## Monitoring
 
-**TODO**
+Étant donné que nous avons self hosté un service de monitoring, cela parait un peu bizarre de monitorer un service de monitoring.
+Nous allons donc créer un petit nginx qui tourne en fond pour pouvoir ajouter une target sur uptime kuma et monitorer le serveur nginx.
