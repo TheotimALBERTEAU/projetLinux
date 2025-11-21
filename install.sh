@@ -1,3 +1,5 @@
+#!/bin/bash -e
+
 # Pre install packages
 apt update
 apt install nodejs npm git sudo
@@ -35,4 +37,5 @@ sudo systemctl start uptime-kuma && sudo systemctl enable uptime-kuma
 sudo apt install fail2ban ufw
 
 sudo ufw enable
+
 sudo ufw allow 3001
