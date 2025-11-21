@@ -1,0 +1,1 @@
+ */1 * * * /home/theotim/backup.sh >> backup.log
