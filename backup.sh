@@ -1,2 +1,11 @@
-mysqldump -u root -p'mdp' --databases Backups_uptime_kuma > db.sql
-restic -r rclone:dropbox:Backups_uptime_kuma backup db.sql
+# saving BDD kuma in db.sql
+mysqldump -u root -p'mdp' --databases kuma > db.sql
+
+# init repo
+restic -r restic-repo init
+
+# backup
+restic -r restic-repo backup db.sql
+
+# send data to dropbox
+rclone copy restic-repo/ Backups_uptime_kuma:
