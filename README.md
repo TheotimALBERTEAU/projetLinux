@@ -35,7 +35,10 @@ Ce script fait :
 
 Nous avons utilisé [restic](https://github.com/restic/restic) pour les backup, et Dropbox pour les stocker dans le cloud. Nous avons d'abord utilisé Google Drive mais Google demandait une confirmation pour poster une application et pouvoir l'utiliser avec leur API ce qui nous a fait tourner vers Dropbox.
 
-Tout ce processus est mis dans un script [backup.sh](backup.sh). Ce script est éxécuté tous les 1h grâce à un job cron.
+Pour créer l'API dropbox, nous avons suivi cette [documentation](https://rclone.org/dropbox/)
+
+Tout ce processus est mis dans un script [backup.sh](backup.sh). Ce script est éxécuté tous les 1h grâce à un job [cron](crontab) 
+puis cette backup est envoyé sur notre remote dropbox grâce à rclone.
 
 ## Sécurité
 
