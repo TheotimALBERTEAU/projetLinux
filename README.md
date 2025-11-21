@@ -40,6 +40,11 @@ Pour créer l'API dropbox, nous avons suivi cette [documentation](https://rclone
 Tout ce processus est mis dans un script [backup.sh](backup.sh). Ce script est éxécuté tous les 1h grâce à un job [cron](crontab) 
 puis cette backup est envoyé sur notre remote dropbox grâce à rclone.
 
+Voila les fichiers qui ont été bien ajoutés au dropbox
+![Dossiers de la backup](image.png)
+
+![Différentes snapshots effectuées](image-1.png)
+
 ## Sécurité
 
 Pour la sécurité nous avons utilisé [fail2ban](https://github.com/fail2ban/fail2ban) qui permet de bloquer les attaques brutforce sur le port 22.
