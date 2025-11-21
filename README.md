@@ -45,6 +45,8 @@ puis cette backup est envoyé sur notre remote dropbox grâce à rclone.
 Pour la sécurité nous avons utilisé [fail2ban](https://github.com/fail2ban/fail2ban) qui permet de bloquer les attaques brutforce sur le port 22.
 Nous utilisons aussi [ufw](https://fr.wikipedia.org/wiki/Uncomplicated_Firewall) pour n'autoriser que le trafic sur le port `3001` en TCP qui est le port HTTP exposé par le service Uptime Kuma.
 
+Tout ceci est référencé dans le fichier [security.sh](security.sh)
+
 ## Monitoring
 
 **TODO**
