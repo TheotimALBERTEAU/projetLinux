@@ -47,6 +47,8 @@ Nous utilisons aussi [ufw](https://fr.wikipedia.org/wiki/Uncomplicated_Firewall)
 
 Tout ceci est référencé dans le fichier [security.sh](security.sh)
 
+Nous avons fait une config fail2ban pour customiser le ban sur le bruteforce ssh. Cette config se trouve dans le fichier [jail.conf](jail.conf)
+
 ## Monitoring
 
 **TODO**
