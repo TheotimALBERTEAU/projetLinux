@@ -32,3 +32,9 @@ sudo cp uptime-kuma.service /etc/systemd/system/uptime-kuma.service
 
 sudo systemctl daemon-reload
 sudo systemctl start uptime-kuma && sudo systemctl enable uptime-kuma
+
+# install packages
+sudo apt install restic rclone
+
+# init repo for backups
+restic -r restic-repo init
