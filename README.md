@@ -57,10 +57,12 @@ Nous avons fait une config fail2ban pour customiser le ban sur le bruteforce ssh
 ## Monitoring
 
 Étant donné que nous avons self hosté un service de monitoring, cela parait un peu bizarre de monitorer un service de monitoring.
-Nous avons donc créé un petit nginx qui tourne en fond pour pouvoir ajouter une target sur uptime kuma et monitorer le serveur nginx.
+Nous avons donc créé un petit [nginx](https://github.com/nginx/nginx) qui tourne en fond pour pouvoir ajouter une target sur uptime kuma et monitorer le serveur nginx.
 
-Sur ce nginx nous avons setup un jeu de 2048 en vanilla html/css/js pour tester :
+Sur ce nginx nous avons setup un [jeu de 2048](https://github.com/kubowania/2048) en vanilla html/css/js pour tester :
 <img width="1912" height="921" alt="image" src="https://github.com/user-attachments/assets/7ea9a5bb-b1ef-43ce-814e-7d3335773ccd" />
 
 Sur Uptime Kuma nous avons créé le monitor et une page de status qui ressemble à ça :
 <img width="1914" height="915" alt="image" src="https://github.com/user-attachments/assets/722b87b5-a1b3-4f0a-87d7-559345c23950" />
+
+> L'installation s'effectue via le script [monitoring.sh](monitoring.sh)
